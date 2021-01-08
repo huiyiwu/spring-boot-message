@@ -10,9 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-boot-activemq" target="1.8" />
       <module name="spring-boot-jms" target="1.7" />
-      <module name="spring-boot-message-passing" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
