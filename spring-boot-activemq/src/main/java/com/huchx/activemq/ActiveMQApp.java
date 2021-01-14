@@ -8,7 +8,7 @@ import org.springframework.jms.annotation.EnableJms;
  *消息传递ActiveMQ实现
  */
 @SpringBootApplication
-@EnableJms
+@EnableJms //启动消息队列
 public class ActiveMQApp
 {
     public static void main( String[] args )

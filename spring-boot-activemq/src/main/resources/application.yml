@@ -1,6 +1,12 @@
 spring:
   activemq:
-    broker-url: tcp:/localhost:61616
+    user: admin
+    password: admin
+    queue-name: huchx.queue
+    topic-name: huchx.topic
+    broker-url: tcp://localhost:61616
     in-memory: true
     pool:
-      enabled: true
+      enabled: false
+    packages:
+      trust-all: true
