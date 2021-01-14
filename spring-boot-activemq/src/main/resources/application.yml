@@ -5,8 +5,4 @@ spring:
     queue-name: huchx.queue
     topic-name: huchx.topic
     broker-url: tcp://localhost:61616
-    in-memory: true
-    pool:
-      enabled: false
-    packages:
-      trust-all: true
+    in-memory: false
