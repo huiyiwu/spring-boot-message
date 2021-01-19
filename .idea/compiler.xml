@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-activemq" />
+        <module name="spring-boot-artemis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-boot-artemis" target="1.8" />
       <module name="spring-boot-jms" target="1.7" />
     </bytecodeTargetLevel>
   </component>

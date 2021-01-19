@@ -24,12 +24,20 @@ public class ProducerController {
     @Autowired
     Topic topic;
 
+    /**
+     * 点对点发送
+     * @return
+     */
     @RequestMapping("queue")
     public String queue(){
         this.jmsMessagingTemplate.convertAndSend(this.queue,"Queue Send");
         return "Queue Success Send";
     }
 
+    /**
+     * 发布-订阅模式发送
+     * @return
+     */
     @RequestMapping("topic")
     public String topic(){
         this.jmsMessagingTemplate.convertAndSend(this.topic,"Topic Send");

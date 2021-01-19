@@ -9,28 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-activemq</artifactId>
+    <artifactId>spring-boot-rabbitmq</artifactId>
 
-    <name>spring-boot-activemq</name>
+    <name>spring-boot-rabbitmq</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
-
     <dependencies>
-        <!--ActiveMq-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
-        </dependency>
-        <!--消息队列连接池-->
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-pool</artifactId>
-            <version>5.15.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-client</artifactId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
     </dependencies>
 
