@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-kafka" />
         <module name="spring-boot-activemq" />
         <module name="spring-boot-artemis" />
       </profile>
