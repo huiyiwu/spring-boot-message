@@ -22,4 +22,9 @@ public class KafkaController {
         msgProducer.send(AppConstansts.TOPIC,"此消息由Controller发送");
         return "send success";
     }
+    @RequestMapping("/send2")
+    public String send2(){
+        msgProducer.send2(AppConstansts.TOPIC_1,"key","此消息由Controller发送");
+        return "send success";
+    }
 }

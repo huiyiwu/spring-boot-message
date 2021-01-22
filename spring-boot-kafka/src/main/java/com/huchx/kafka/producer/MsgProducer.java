@@ -26,12 +26,26 @@ public class MsgProducer {
         feature.addCallback(new ListenableFutureCallback<SendResult<String, Object>>() {
             @Override
             public void onFailure(Throwable throwable) {
-                System.out.println("发送消息失败");
+                System.out.println("Send发送消息失败");
             }
 
             @Override
             public void onSuccess(SendResult<String, Object> stringObjectSendResult) {
-                System.out.println("发送消息成功");
+                System.out.println("Send发送消息成功");
+            }
+        });
+    }
+    public void send2(String topic,String key,String msg){
+        ListenableFuture<SendResult<String,Object>> feature = kafkaTemplate.send(topic,key,msg);
+        feature.addCallback(new ListenableFutureCallback<SendResult<String, Object>>() {
+            @Override
+            public void onFailure(Throwable throwable) {
+                System.out.println("Send2发送消息失败");
+            }
+
+            @Override
+            public void onSuccess(SendResult<String, Object> stringObjectSendResult) {
+                System.out.println("Send2发送消息成功");
             }
         });
     }

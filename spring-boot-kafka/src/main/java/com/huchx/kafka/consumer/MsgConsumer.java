@@ -38,4 +38,12 @@ public class MsgConsumer {
             ack.acknowledge();
         }
     }
+    @KafkaListener(topics = AppConstansts.TOPIC_1)
+    public void topic_1(String msg){
+        System.out.println("Topic_1消费了消息："+msg);
+    }
+    @KafkaListener(topics = AppConstansts.TOPIC_2)
+    public void topic_2(String msg){
+        System.out.println("Topic_2消费了消息："+msg);
+    }
 }

@@ -16,4 +16,10 @@ spring:
       ack-count: 10 #当ackMode为“COUNT”或“COUNT_TIME”时，偏移提交之间的记录数
       ack-time: 10000 #当ackMode为“TIME”或“COUNT_TIME”时，偏移提交之间的时间（以毫秒为单位）
     streams:
-      application-id: huchx
+      application-id: kafka-streams-huchx
+      properties:
+        default:
+          key:
+            serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+          value:
+            serde: org.springframework.kafka.support.serializer.JsonSerde
